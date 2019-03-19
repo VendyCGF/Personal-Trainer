@@ -1,0 +1,17 @@
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background: url("../pictures/brocnbells-com-team-1284589-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+
+<!-- Changing words -->
+
+#changingword {
+  color:purple;
+}
