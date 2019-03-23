@@ -7,7 +7,7 @@ body {
 /* MASTHEAD DREAM BODY
 -------------------------------------------------- */
 
-.masthead {
+.hero {
   height: 100vh;
   min-height: 500px;
   background: url("../pictures/brocnbells-com-team-1284589-unsplash.jpg");
@@ -15,14 +15,13 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  padding: 20% 0 0;
 }
-
 
 .masthead h2 {
   font-weight: 400;
   color: white;
   font-size: 80px;
+  padding: 20% 0 0;
 }
 
 #word {
@@ -93,18 +92,11 @@ body {
 .navbar{
   top: 0px;
   transition: 0.2s;
-}
-
-
-
-.navbar .navbar-inner {
-    padding: 0;
-}
-
-.navbar .nav {
-    margin: 0;
-    width: 100%;
-    padding: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
 }
 
 .navbar .nav li {
@@ -116,16 +108,4 @@ body {
 .navbar .nav li a {
     font-weight: bold;
     text-align: center;
-    border-left: 1px solid rgba(255, 255, 255, .75);
-    border-right: 1px solid rgba(0, 0, 0, .1);
-}
-
-.navbar .nav li:first-child a {
-    border-left: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.navbar .nav li:last-child a {
-    border-right: 0;
-    border-radius: 0 3px 3px 0;
 }
