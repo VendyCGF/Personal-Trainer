@@ -1,31 +1,35 @@
-<!-- Changing words -->
+/* MASERHEAD CHANGING WORD
+-------------------------------------------------- */
 
-(function(){
-      var words = [
-          'state',
-          'lifestyle',
-          'feeling'
-          ], i = 0;
-      setInterval(function(){
-          $('#changingword').fadeOut(function(){
-              $(this).html(words[i=(i+1)%words.length]).fadeIn();
-          });
-      }, 3000);
+$(function () {
+  count = 0;
+  wordsArray = ["body", "state", "lifestyle"];
+  setInterval(function () {
+    count++;
+    $("#word").fadeOut(400, function () {
+      $(this).text(wordsArray[count % wordsArray.length]).fadeIn(400);
+    });
+  }, 2500);
+});
 
-  })();
+/* STICKY NAV BAR
+-------------------------------------------------- */
 
+$(document).ready(function() {
+  var $navbar = $("#mainNav");
 
-<!-- Navigation -->
+  AdjustHeader(); // Incase the user loads the page from halfway down (or something);
+  $(window).scroll(function() {
+      AdjustHeader();
+  });
 
-.js-scroll-trigger
-
-
-
-$('#myAffix').affix({
-  offset: {
-    top: 100,
-    bottom: function () {
-      return (this.bottom = $('.footer').outerHeight(true))
+  function AdjustHeader(){
+    if ($(window).scrollTop() > 1600) {
+      if (!$navbar.hasClass("navbar-fixed-top")) {
+        $navbar.addClass("navbar-fixed-top");
+      }
+    } else {
+      $navbar.removeClass("navbar-fixed-top");
     }
   }
-})
+});

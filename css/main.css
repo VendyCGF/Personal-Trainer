@@ -1,3 +1,12 @@
+body {
+       font-family: 'Work+Sans', sans-serif;
+       overflow-y: scroll;
+       scroll-behavior: smooth;
+}
+
+/* MASTHEAD DREAM BODY
+-------------------------------------------------- */
+
 .masthead {
   height: 100vh;
   min-height: 500px;
@@ -5,47 +14,57 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
+  padding: 20% 0 0;
 }
 
 
-.underline .line {
-    height: 3px;
-    width: 5rem;
-    background: linear-gradient(90deg, #5dbfcc, #ff99cc);
-    display: inline-block;
+.masthead h2 {
+  font-weight: 400;
+  color: white;
+  font-size: 80px;
 }
 
-<!-- Changing words -->
-
-#changingword {
-  color:purple;
+#word {
+  font-weight: bold
+  color: purple;
 }
 
-/* MARKETING CONTENT
+
+
+/* LIFESTYLE CONTENT
 -------------------------------------------------- */
 
 /* Center align the text within the three columns */
-.marketing .col-lg-4 {
+.lifestyle .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
-.marketing h2 {
+.lifestyle h2 {
   font-weight: 400;
 }
-.marketing .col-lg-4 p {
+.lifestyle .col-lg-4 p {
   margin-right: .75rem;
   margin-left: .75rem;
 }
 
+/* Line between Heading and Paragraph */
+
+.underline .line {
+    height: 4px;
+    width: 8rem;
+    background: linear-gradient(90deg, #5dbfcc, #ff99cc);
+    display: inline-block;
+}
 
 /* Featurettes
 ------------------------- */
 
 .featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 6rem 0; /* Space out the Bootstrap <hr> more */
 }
 
-/* Thin out the marketing headings */
+/* Thin out the lifestyle headings */
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
@@ -68,14 +87,24 @@
   }
 }
 
+/* NAVIGATION CONTENT
+-------------------------------------------------- */
+
+.navbar{
+  top: 0px;
+  transition: 0.2s;
+}
+
+
+
 .navbar .navbar-inner {
     padding: 0;
 }
 
 .navbar .nav {
     margin: 0;
-    display: table;
     width: 100%;
+    padding: 0;
 }
 
 .navbar .nav li {
