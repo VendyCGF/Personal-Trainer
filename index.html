@@ -16,7 +16,7 @@
     <div class="bg-circle-4 bg-circle"></div>
 
   </head>
-  <body>
+  <body onload=" window.setTimeout(function(){displayMessage(5000);},5000);">
 
 
 
@@ -27,7 +27,6 @@
           <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggle-icon"></span>
           </button>
-            <a class="nav-link js-scroll-trigger" href="#home"><img src="pictures/house-building_1f3e0.png" width="30" height="30">Home</a>
         </div>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="nav navbar-nav">
@@ -60,10 +59,21 @@
      <header class="masthead">
    <div class="container h-100">
      <div class="row h-100 align-items-center">
-       <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2'></script>
        <div class="col-12 text-center">
-         <h1 class="font-weight-light">What's your dream <span id="changingword">body</span></h1>
-       </div>
+         <script>
+          $(function () {
+            count = 0;
+            wordsArray = ["body", "diet", "lifestyle"];
+            setInterval(function () {
+              count++;
+              $("#word").fadeOut(400, function () {
+                $(this).text(wordsArray[count % wordsArray.length]).fadeIn(400);
+              });
+            }, 2000);
+          });
+         </script>
+            <h1> What's your dream <span id="word">body</span>?</h1>
+        </div>
      </div>
    </div>
  </header>
