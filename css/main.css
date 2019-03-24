@@ -17,16 +17,15 @@ body {
   position: relative;
 }
 
-.masthead h2 {
-  font-weight: 400;
+.masthead h1 {
+  font-weight: bold;
   color: white;
   font-size: 80px;
   padding: 20% 0 0;
 }
 
 #word {
-  font-weight: bold
-  color: purple;
+  color: #daeea0;
 }
 
 
@@ -52,7 +51,7 @@ body {
 .underline .line {
     height: 4px;
     width: 8rem;
-    background: linear-gradient(90deg, #5dbfcc, #ff99cc);
+    background: linear-gradient(90deg, #daeea0, #5dbfcc);
     display: inline-block;
 }
 
@@ -86,26 +85,28 @@ body {
   }
 }
 
-/* NAVIGATION CONTENT
+/* NAVIGATION
 -------------------------------------------------- */
-
-.navbar{
-  top: 0px;
-  transition: 0.2s;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  font-weight: bold;
-  text-align: center;
+.navbar {
+    font-weight: bold;
+    background: linear-gradient(to right, rgba(219, 238, 160, 0.7), rgba(93, 191, 204, 0.7));
 }
 
 .navbar .nav li {
-    display: table-cell;
     width: 1%;
     float: none;
 }
 
-.navbar .nav li a {
-    font-weight: bold;
-    text-align: center;
+
+/* TESTIMONIALS
+-------------------------------------------------- */
+
+.profile {
+  width: 150px;
+}
+
+
+.featurette-image {
+  max-width: 460px;
+  max-height: 500px;
 }

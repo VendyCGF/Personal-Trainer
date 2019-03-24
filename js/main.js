@@ -12,6 +12,7 @@ $(function () {
   }, 2500);
 });
 
+
 /* STICKY NAV BAR
 -------------------------------------------------- */
 
@@ -24,7 +25,7 @@ $(document).ready(function() {
   });
 
   function AdjustHeader(){
-    if ($(window).scrollTop() > 1600) {
+    if ($(window).scrollTop() > 1400) {
       if (!$navbar.hasClass("navbar-fixed-top")) {
         $navbar.addClass("navbar-fixed-top");
       }
