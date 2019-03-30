@@ -89,7 +89,7 @@ body {
 -------------------------------------------------- */
 .navbar {
     font-weight: bold;
-    background: linear-gradient(to right, rgba(219, 238, 160, 0.7), rgba(93, 191, 204, 0.7));
+    background: linear-gradient(to right, #F3FCF6, #D2E7EF);
     margin-bottom: 0;
 }
 
