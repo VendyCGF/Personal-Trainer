@@ -99,10 +99,6 @@ body {
 -------------------------------------------------- */
 .navbar {
     font-weight: bold;
-<<<<<<< HEAD
-    background: linear-gradient(to right, #E4F9EC, #CFF2E8);
-    margin-bottom: 0;
-=======
     background: linear-gradient(to right, rgba(219, 238, 160, 0.7), rgba(93, 191, 204, 0.7));
     margin-bottom: 0;
     border-color: transparent;
@@ -116,7 +112,6 @@ body {
 
 .navbar-default .navbar-nav > li > a:hover {
     font:  yellow;
->>>>>>> 89c58ec2b270c7e0227b59f0b50a5818778dbb83
 }
 
 .navbar .nav li {
