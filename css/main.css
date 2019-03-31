@@ -59,7 +59,7 @@ body {
 ------------------------- */
 
 .featurette-divider {
-  margin: 6rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 7rem 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the lifestyle headings */
@@ -99,13 +99,13 @@ body {
 -------------------------------------------------- */
 .navbar {
     font-weight: bold;
-    background: linear-gradient(to right, rgba(219, 238, 160, 0.7), rgba(93, 191, 204, 0.7));
+    background: linear-gradient(90deg, #daeea0, #5dbfcc);
     margin-bottom: 0;
     border-color: transparent;
 }
 
 .navbar-text-gradient {
-  background: -webkit-linear-gradient(#daeea0, #5dbfcc);
+  background: #1c808e;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -148,18 +148,20 @@ body {
 }
 
 
-
-
-
 .contact-background {
-  height: 100vh;
-  min-height: 500px;
+  display: centered;
   background-image: url("../pictures/mike-stezycki-332000-unsplash.jpg");
-  background-position: center center;
-  background-repeat:  no-repeat;
+  height: 95vh;
+  min-height: 400px;
+  background-position: center;
   background-attachment: fixed;
-  background-size:  cover;
+  background-size: cover;
+  background-repeat:  no-repeat;
   opacity: 0.9;
+}
+
+.container-contact .flex-horizontal-center {
+  justify-content: center;
 }
 
 .wrap-contact {
@@ -168,9 +170,4 @@ body {
     overflow: hidden;
     padding: 10px 70px 30px 70px;
     font-size: 15px;
-  }
-
-.train-me-simona {
-  min-height: 20px;
-
 }
