@@ -99,8 +99,24 @@ body {
 -------------------------------------------------- */
 .navbar {
     font-weight: bold;
+<<<<<<< HEAD
     background: linear-gradient(to right, #E4F9EC, #CFF2E8);
     margin-bottom: 0;
+=======
+    background: linear-gradient(to right, rgba(219, 238, 160, 0.7), rgba(93, 191, 204, 0.7));
+    margin-bottom: 0;
+    border-color: transparent;
+}
+
+.navbar-text-gradient {
+  background: -webkit-linear-gradient(#daeea0, #5dbfcc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    font:  yellow;
+>>>>>>> 89c58ec2b270c7e0227b59f0b50a5818778dbb83
 }
 
 .navbar .nav li {
@@ -134,4 +150,32 @@ body {
 
 .social {
   width: 20px;
+}
+
+
+
+
+
+.contact-background {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("../pictures/mike-stezycki-332000-unsplash.jpg");
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  cover;
+  opacity: 0.9;
+}
+
+.wrap-contact {
+    background: linear-gradient(to right, rgba(219, 238, 160, 0.9), rgba(93, 191, 204, 0.9));
+    border-radius: 150px;
+    overflow: hidden;
+    padding: 10px 70px 30px 70px;
+    font-size: 15px;
+  }
+
+.train-me-simona {
+  min-height: 20px;
+
 }
