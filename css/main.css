@@ -87,10 +87,21 @@ body {
 
 /* NAVIGATION
 -------------------------------------------------- */
-.navbar {
+.navbar-default {
     font-weight: bold;
-    background: linear-gradient(to right, rgba(219, 238, 160, 0.7), rgba(93, 191, 204, 0.7));
+    background: linear-gradient(to right, rgba(219, 238, 160, 0.5), rgba(93, 191, 204, 0.5));
     margin-bottom: 0;
+    border-color: transparent;
+}
+
+.navbar-text-gradient {  
+  background: -webkit-linear-gradient(#daeea0, #5dbfcc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    font:  yellow;
 }
 
 .navbar .nav li {
@@ -110,4 +121,13 @@ body {
 .featurette-image {
   max-width: 460px;
   max-height: 500px;
+}
+
+.social {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.btn .reach-out {
+  background: linear-gradient(90deg, #daeea0, #5dbfcc);
 }
