@@ -174,3 +174,21 @@ body {
   min-height: 20px;
 
 }
+
+#submitDetails {
+  background: none;
+  padding: 0;
+  border: none;
+}
+
+#submitDetails:hover {
+  background: none;
+  padding: 0;
+  border: none;
+}
+
+#submitDetails:onclick {
+  background: none;
+  padding: 0;
+  border: none;
+}
