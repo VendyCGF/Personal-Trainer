@@ -1,7 +1,7 @@
 /* MASERHEAD CHANGING WORD
 -------------------------------------------------- */
 
-$(function () {
+$(function changeWord() {
   count = 0;
   wordsArray = ["body", "state", "lifestyle"];
   setInterval(function () {
@@ -11,6 +11,7 @@ $(function () {
     });
   }, 2500);
 });
+
 
 
 /* STICKY NAV BAR
