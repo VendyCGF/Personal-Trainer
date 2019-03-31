@@ -7,12 +7,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initil-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="pictures/muscle.png" type="image/png">
-    <script src="jquery.js"></script>
   </head>
-
-  <body onload=" window.setTimeout(function(){displayMessage(5000);},5000);">
 
   <body>
     <!-- Navigation -->
@@ -32,7 +29,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav nav-pills nav-justified">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#home">
+              <a class="nav-link js-scroll-trigger" href="index.html#home">
                 <img src="pictures/house-building_1f3e0.png" width="30" height="30"><span class="navbar-text-gradient"> HOME</span><span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
@@ -58,66 +55,59 @@
     </nav>
 
 
-      <div class="contact-background">
+    <div class="contact-background">
       <div class="container-contact col-md-6 col-md-offset-3">
-      <form>
-        <div class="form-row">
-          <div class="wrap-contact">
-            <div class="text-center">
-            <img class="img-fluid" src="pictures/letsdothis.png">
-            </a>
-          </div>
-          <div class="form-group col-md-4 col-md-offset-2">
-            <label for="inputName">Name</label>
-            <input type="text" class="form-control" id="inputFirstName" placeholder="John">
-          </div>
-          <div class="form-group col-md-4 col-md-offset-0">
-            <label for="inputLastName">Surname</label>
-            <input type="text" class="form-control" id="inputLastName" placeholder="Smith">
-          </div>
-          <div class="form-group col-md-4 col-md-offset-2">
-            <label for="inputEmail">Email</label>
-            <input type="Email" class="form-control" id="inputEmail" placeholder="example@email.com">
-          </div>
-          <div class="form-group col-md-4 col-md-offset-0">
-            <label for="inputNumber">Phone</label>
-            <input type="Number" class="form-control" id="inputNumber" placeholder="07263 018176">
-          </div>
-          <div class="form-group col-md-8 col-md-offset-2">
-            <label for="message">What are your fitness goals?</label>
-            <textarea class="form-control" id="message" rows="3" placeholder="I want a sixpack before the end of the month"></textarea>
-          </div>
-          <div class="form-group col-md-8 col-md-offset-2">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck">
-              <label class="form-check-label" for="gridCheck"> Tick to recieve weekly workout & meal plans </label>
+        <form data-toggle="validator" role="form" data-disable="false" onsubmit="return alert('Thanks! We will get in touch soon.');">
+          <div class="form-row">
+            <div class="wrap-contact">
+              <div class="text-center">
+                <img class="img-fluid" src="pictures/letsdothis.png">
+              </div>
+              <div class="form-group col-md-4 col-md-offset-2">
+                <label for="inputName">Name</label>
+                <input type="text" class="form-control" id="inputFirstName" placeholder="John" required>
+              </div>
+              <div class="form-group col-md-4 col-md-offset-0">
+                <label for="inputLastName">Surname</label>
+                <input type="text" class="form-control" id="inputLastName" placeholder="Smith" required>
+              </div>
+              <div class="form-group col-md-4 col-md-offset-2">
+                <label for="inputEmail">Email</label>
+                <input type="Email" class="form-control" id="inputEmail" placeholder="example@email.com" required>
+              </div>
+              <div class="form-group col-md-4 col-md-offset-0">
+                <label for="inputNumber">Phone</label>
+                <input type="Number" class="form-control" id="inputNumber" placeholder="07263 018176">
+              </div>
+              <div class="form-group col-md-8 col-md-offset-2">
+                <label for="message">What are your fitness goals?</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="I want a sixpack before the end of the month"></textarea>
+              </div>
+              <div class="form-group col-md-8 col-md-offset-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck"> Tick to recieve weekly workout & meal plans </label>
+                </div>
+              </div>
+
+              <div class="train-me-simona text-center">
+                <button type="submit" class="btn btn-primary" id='submitDetails'>
+                  <img src="pictures/fire_1f525_4_50_smallest.png" class="train-me img-fluid btn-round">
+                  <img src="pictures/fire_1f525_4_50_smallest.png" class="train-me img-fluid btn-round">
+                  <img src="pictures/fire_1f525_4_50_smallest.png" class="train-me img-fluid btn-round">
+                </button>
+              </div>
             </div>
-          </div>
-
-          <div class="train-me-simona text-center">
-           <a class="btn btn-train-me btn-round" href="#" >
-           <img src="pictures/fire_1f525_4_50_smallest.png" class="train-me img-fluid btn-round">
-           <img src="pictures/fire_1f525_4_50_smallest.png" class="train-me img-fluid btn-round">
-           <img src="pictures/fire_1f525_4_50_smallest.png" class="train-me img-fluid btn-round">
-           </a>
-         </div>
-
+          </form>
         </div>
-    </form>
 
-</div>
-
-<div class="footer-copyright text-center"><p>© 2019 Vendy Steinberga & Priyanka Sadhwani </p></div>
-
-</div>
-
-
-
+        <div class="footer-copyright text-center"><p>© 2019 Vendy Steinberga & Priyanka Sadhwani </p></div>
+      </div>
 
 <!-- Javascript at end -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script src="js/main.js" type="text/javascript"></script>
-</body>
+  </body>
 </html>
