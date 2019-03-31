@@ -51,3 +51,26 @@ $(document).ready(function() {
 
     });
 });
+
+document.getElementById("submitDetails").addEventListener("click", check)
+
+var check = function(){
+  setTimeout(check, 2000); // check again in a second
+  saveFormInputs();
+}
+
+
+function saveFormInputs()
+{
+
+var firstName = document.getElementById("inputFirstName").value;
+var lastName = document.getElementById("inputLastName").value;
+var email = document.getElementById("inputEmail").value;
+var number = document.getElementById("inputNumber").value;
+var message = document.getElementById("message").value;
+var recievePlans = document.getElementById("gridCheck").value;
+
+
+
+  alert("Thank you for reaching out to me. I will get in touch soon!")
+}

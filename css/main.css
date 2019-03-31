@@ -171,3 +171,21 @@ body {
     padding: 10px 70px 30px 70px;
     font-size: 15px;
 }
+
+#submitDetails {
+  background: none;
+  padding: 0;
+  border: none;
+}
+
+#submitDetails:hover {
+  background: none;
+  padding: 0;
+  border: none;
+}
+
+#submitDetails:onclick {
+  background: none;
+  padding: 0;
+  border: none;
+}
