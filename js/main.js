@@ -26,7 +26,7 @@ $(document).ready(function() {
   });
 
   function AdjustHeader(){
-    if ($(window).scrollTop() > 1400) {
+    if ($(window).scrollTop() > 1050) {
       if (!$navbar.hasClass("navbar-fixed-top")) {
         $navbar.addClass("navbar-fixed-top");
       }

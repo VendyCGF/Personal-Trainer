@@ -148,18 +148,6 @@ body {
 }
 
 
-.contact-background {
-  display: centered;
-  background-image: url("../pictures/mike-stezycki-332000-unsplash.jpg");
-  height: 95vh;
-  min-height: 400px;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat:  no-repeat;
-  opacity: 0.9;
-}
-
 .container-contact .flex-horizontal-center {
   justify-content: center;
 }
@@ -188,4 +176,17 @@ body {
   background: none;
   padding: 0;
   border: none;
+}
+
+
+.Contact-Simona h1 {
+
+  font-size: 80px;
+}
+
+.featurette-heading .transform {
+  font-weight: bold;
+  background: -webkit-linear-gradient(0.90turn, #daeea0, #5dbfcc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
