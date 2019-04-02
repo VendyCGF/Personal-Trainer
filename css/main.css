@@ -156,8 +156,8 @@ body {
     background: linear-gradient(to right, rgba(219, 238, 160, 0.9), rgba(93, 191, 204, 0.9));
     border-radius: 150px;
     overflow: hidden;
-    padding: 10px 70px 30px 70px;
-    font-size: 15px;
+    padding: 8px 50px 8px 50px;
+    font-size: 18px;
 }
 
 #submitDetails {
