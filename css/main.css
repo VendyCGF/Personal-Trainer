@@ -200,3 +200,8 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.btn-primary-outline {
+  background-color: transparent;
+  border-color: transparent;
+}
