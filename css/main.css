@@ -148,8 +148,10 @@ body {
 }
 
 
-.container-contact .flex-horizontal-center {
+.container-contact {
   justify-content: center;
+  padding: 45px 40px 45px 40px;
+
 }
 
 .wrap-contact {
@@ -157,7 +159,15 @@ body {
     border-radius: 150px;
     overflow: hidden;
     padding: 8px 50px 8px 50px;
-    font-size: 18px;
+    font-size: 17px;
+}
+
+#letsdothis {
+  padding: 10px 70px 0px 70px;
+}
+
+.train-me-simona {
+  padding: 20px 20px 0px 20px;
 }
 
 #submitDetails {
